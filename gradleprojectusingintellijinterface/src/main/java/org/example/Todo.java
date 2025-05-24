@@ -1,3 +1,5 @@
+package org.example;
+
 import com.google.gson.annotations.SerializedName;
 
 public class Todo{
@@ -44,5 +46,15 @@ public class Todo{
 
 	public int getUserId(){
 		return userId;
+	}
+
+	@Override
+	public String toString() {
+		return "Todo{" +
+				"id=" + id +
+				", completed=" + completed +
+				", title='" + title + '\'' +
+				", userId=" + userId +
+				'}';
 	}
 }
